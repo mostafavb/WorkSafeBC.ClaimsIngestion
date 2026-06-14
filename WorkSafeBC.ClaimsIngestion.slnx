@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/WorkSafeBC.Claims.AppHost/WorkSafeBC.Claims.AppHost.csproj" />
+    <Project Path="src/WorkSafeBC.Claims.Application/WorkSafeBC.Claims.Application.csproj" />
+    <Project Path="src/WorkSafeBC.Claims.Domain/WorkSafeBC.Claims.Domain.csproj" />
+    <Project Path="src/WorkSafeBC.Claims.Infrastructure/WorkSafeBC.Claims.Infrastructure.csproj" />
+    <Project Path="src/WorkSafeBC.Claims.ServiceDefaults/WorkSafeBC.Claims.ServiceDefaults.csproj" />
+    <Project Path="src/WorkSafeBC.Claims.Worker/WorkSafeBC.Claims.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WorkSafeBC.Claims.Tests.Architecture/WorkSafeBC.Claims.Tests.Architecture.csproj" />
+    <Project Path="tests/WorkSafeBC.Claims.Tests.Contract/WorkSafeBC.Claims.Tests.Contract.csproj" />
+    <Project Path="tests/WorkSafeBC.Claims.Tests.Unit/WorkSafeBC.Claims.Tests.Unit.csproj" />
+  </Folder>
+</Solution>

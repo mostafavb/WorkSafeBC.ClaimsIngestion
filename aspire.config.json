@@ -1,0 +1,5 @@
+{
+    "appHost": {
+        "path": "src\\WorkSafeBC.Claims.AppHost\\WorkSafeBC.Claims.AppHost.csproj"
+    }
+}

@@ -1,0 +1,17 @@
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\bin\Release\net10.0\WorkSafeBC.Claims.Infrastructure.deps.json
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\bin\Release\net10.0\WorkSafeBC.Claims.Infrastructure.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\bin\Release\net10.0\WorkSafeBC.Claims.Infrastructure.pdb
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\bin\Release\net10.0\WorkSafeBC.Claims.Application.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\bin\Release\net10.0\WorkSafeBC.Claims.Domain.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\bin\Release\net10.0\WorkSafeBC.Claims.Application.pdb
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\bin\Release\net10.0\WorkSafeBC.Claims.Domain.pdb
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.csproj.AssemblyReference.cache
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.AssemblyInfoInputs.cache
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.AssemblyInfo.cs
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.csproj.CoreCompileInputs.cache
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafe.1E7D2750.Up2Date
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\refint\WorkSafeBC.Claims.Infrastructure.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.pdb
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\ref\WorkSafeBC.Claims.Infrastructure.dll
