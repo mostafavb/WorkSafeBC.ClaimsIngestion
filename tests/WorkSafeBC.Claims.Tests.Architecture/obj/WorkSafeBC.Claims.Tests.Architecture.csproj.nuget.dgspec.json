@@ -1053,17 +1053,17 @@
         }
       }
     },
-    "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj": {
+    "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj",
+        "projectUniqueName": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj",
         "projectName": "WorkSafeBC.Claims.ServiceDefaults",
-        "projectPath": "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj",
+        "projectPath": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\mvazinia\\.nuget\\packages\\",
-        "outputPath": "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\obj\\",
+        "outputPath": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "c:\\MVB\\Projects\\WS\\prj1\\src\\NuGet.Config",
+          "C:\\MVB\\Projects\\WS\\prj1\\src\\NuGet.Config",
           "C:\\Users\\mvazinia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -1589,8 +1589,8 @@
               "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\WorkSafeBC.Claims.Infrastructure.csproj": {
                 "projectPath": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\WorkSafeBC.Claims.Infrastructure.csproj"
               },
-              "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj": {
-                "projectPath": "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj"
+              "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj": {
+                "projectPath": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.ServiceDefaults\\WorkSafeBC.Claims.ServiceDefaults.csproj"
               }
             }
           }

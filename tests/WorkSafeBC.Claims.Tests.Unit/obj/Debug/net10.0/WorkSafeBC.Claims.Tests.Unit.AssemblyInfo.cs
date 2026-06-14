@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkSafeBC.Claims.Tests.Unit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1585f272d6f1b30a9ada5fe64f6418170e1568d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkSafeBC.Claims.Tests.Unit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkSafeBC.Claims.Tests.Unit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
