@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkSafeBC.Claims.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3faa2d3948724e27a8e0a5d45872f5c62005b1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkSafeBC.Claims.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkSafeBC.Claims.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

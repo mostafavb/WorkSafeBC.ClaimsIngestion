@@ -72,3 +72,4 @@ C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Release\net10.0\refint\
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Release\net10.0\WorkSafeBC.Claims.Worker.pdb
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Release\net10.0\WorkSafeBC.Claims.Worker.genruntimeconfig.cache
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Release\net10.0\ref\WorkSafeBC.Claims.Worker.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Release\net10.0\WorkSafeBC.Claims.Worker.sourcelink.json

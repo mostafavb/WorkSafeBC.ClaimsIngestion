@@ -26,10 +26,21 @@ builder.Services
 
 builder.Services.AddHostedService<ClaimsIngestionWorker>();
 
+var prometheusUri = builder.Configuration["OpenTelemetry:PrometheusUri"];
+
 builder.Services.AddOpenTelemetry()
     .WithTracing(tracing => tracing.AddSource(ClaimsTelemetry.ActivitySourceName))
-    .WithMetrics(metrics => metrics
-        .AddMeter(ClaimsTelemetry.MeterName)
-        .AddProcessInstrumentation());
+    .WithMetrics(metrics =>
+    {
+        metrics
+            .AddMeter(ClaimsTelemetry.MeterName)
+            .AddRuntimeInstrumentation()
+            .AddProcessInstrumentation();
+
+        if (!string.IsNullOrWhiteSpace(prometheusUri))
+        {
+            metrics.AddPrometheusHttpListener(options => options.UriPrefixes = [prometheusUri]);
+        }
+    });
 
 await builder.Build().RunAsync();

@@ -111,3 +111,4 @@ C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Contract\obj\Debug\net10.0
 C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Contract\obj\Debug\net10.0\WorkSafeBC.Claims.Tests.Contract.pdb
 C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Contract\obj\Debug\net10.0\WorkSafeBC.Claims.Tests.Contract.genruntimeconfig.cache
 C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Contract\obj\Debug\net10.0\ref\WorkSafeBC.Claims.Tests.Contract.dll
+C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Contract\obj\Debug\net10.0\WorkSafeBC.Claims.Tests.Contract.sourcelink.json

@@ -109,3 +109,4 @@ C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\obj\Release\net10.0\r
 C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\obj\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.pdb
 C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\obj\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.genruntimeconfig.cache
 C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\obj\Release\net10.0\ref\WorkSafeBC.Claims.Tests.Unit.dll
+C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\obj\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.sourcelink.json

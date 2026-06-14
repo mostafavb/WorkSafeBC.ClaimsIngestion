@@ -9,3 +9,4 @@ C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Domain\obj\Debug\net10.0\WorkSafeB
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Domain\obj\Debug\net10.0\refint\WorkSafeBC.Claims.Domain.dll
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Domain\obj\Debug\net10.0\WorkSafeBC.Claims.Domain.pdb
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Domain\obj\Debug\net10.0\ref\WorkSafeBC.Claims.Domain.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Domain\obj\Debug\net10.0\WorkSafeBC.Claims.Domain.sourcelink.json

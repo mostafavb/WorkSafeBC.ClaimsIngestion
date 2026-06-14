@@ -15,3 +15,4 @@ C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\refint\WorkSafeBC.Claims.Infrastructure.dll
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.pdb
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\ref\WorkSafeBC.Claims.Infrastructure.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Infrastructure\obj\Release\net10.0\WorkSafeBC.Claims.Infrastructure.sourcelink.json

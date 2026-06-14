@@ -96,3 +96,12 @@ C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\obj\Release\net10.0\refint
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\obj\Release\net10.0\WorkSafeBC.Claims.AppHost.pdb
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\obj\Release\net10.0\WorkSafeBC.Claims.AppHost.genruntimeconfig.cache
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\obj\Release\net10.0\ref\WorkSafeBC.Claims.AppHost.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\Microsoft.Extensions.AI.Abstractions.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\ModelContextProtocol.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\ModelContextProtocol.Core.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\OpenTelemetry.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\OpenTelemetry.Api.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\OpenTelemetry.Api.ProviderBuilderExtensions.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\OpenTelemetry.Exporter.OpenTelemetryProtocol.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\bin\Release\net10.0\OpenTelemetry.Extensions.Hosting.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.AppHost\obj\Release\net10.0\WorkSafeBC.Claims.AppHost.sourcelink.json
