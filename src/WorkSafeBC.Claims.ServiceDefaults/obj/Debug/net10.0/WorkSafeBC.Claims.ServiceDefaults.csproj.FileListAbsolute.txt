@@ -10,3 +10,4 @@ C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.ServiceDefaults\obj\Debug\net10.0\
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.ServiceDefaults\obj\Debug\net10.0\refint\WorkSafeBC.Claims.ServiceDefaults.dll
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.ServiceDefaults\obj\Debug\net10.0\WorkSafeBC.Claims.ServiceDefaults.pdb
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.ServiceDefaults\obj\Debug\net10.0\ref\WorkSafeBC.Claims.ServiceDefaults.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.ServiceDefaults\obj\Debug\net10.0\WorkSafeBC.Claims.ServiceDefaults.sourcelink.json

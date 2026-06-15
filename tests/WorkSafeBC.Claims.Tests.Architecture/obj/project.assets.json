@@ -1459,6 +1459,22 @@
           }
         }
       },
+      "OpenTelemetry.Exporter.Prometheus.HttpListener/1.16.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenTelemetry": "[1.16.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/net10.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll": {
+            "related": ".dll.sigstore.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll": {
+            "related": ".dll.sigstore.json;.xml"
+          }
+        }
+      },
       "OpenTelemetry.Extensions.Hosting/1.16.0": {
         "type": "package",
         "dependencies": {
@@ -1890,6 +1906,7 @@
           "Azure.Identity": "1.21.0",
           "Microsoft.Extensions.Hosting": "10.0.8",
           "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.16.0",
+          "OpenTelemetry.Exporter.Prometheus.HttpListener": "1.16.0-beta.1",
           "OpenTelemetry.Extensions.Hosting": "1.16.0",
           "OpenTelemetry.Instrumentation.Process": "1.13.0-beta.1",
           "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
@@ -3908,6 +3925,36 @@
         "opentelemetry-icon-color.png",
         "opentelemetry.exporter.opentelemetryprotocol.1.16.0.nupkg.sha512",
         "opentelemetry.exporter.opentelemetryprotocol.nuspec"
+      ]
+    },
+    "OpenTelemetry.Exporter.Prometheus.HttpListener/1.16.0-beta.1": {
+      "sha512": "HRVeBsDrwcc7X46kSgZwohNNdxvL9As833CId4tEt0095qjsGm2g5O5f2+PldICV6KqhthwodkDAbgq9iQZEgw==",
+      "type": "package",
+      "path": "opentelemetry.exporter.prometheus.httplistener/1.16.0-beta.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net10.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll",
+        "lib/net10.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll.sigstore.json",
+        "lib/net10.0/OpenTelemetry.Exporter.Prometheus.HttpListener.xml",
+        "lib/net462/OpenTelemetry.Exporter.Prometheus.HttpListener.dll",
+        "lib/net462/OpenTelemetry.Exporter.Prometheus.HttpListener.dll.sigstore.json",
+        "lib/net462/OpenTelemetry.Exporter.Prometheus.HttpListener.xml",
+        "lib/net8.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll",
+        "lib/net8.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll.sigstore.json",
+        "lib/net8.0/OpenTelemetry.Exporter.Prometheus.HttpListener.xml",
+        "lib/net9.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll",
+        "lib/net9.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll.sigstore.json",
+        "lib/net9.0/OpenTelemetry.Exporter.Prometheus.HttpListener.xml",
+        "lib/netstandard2.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll",
+        "lib/netstandard2.0/OpenTelemetry.Exporter.Prometheus.HttpListener.dll.sigstore.json",
+        "lib/netstandard2.0/OpenTelemetry.Exporter.Prometheus.HttpListener.xml",
+        "opentelemetry-icon-color.png",
+        "opentelemetry.exporter.prometheus.httplistener.1.16.0-beta.1.nupkg.sha512",
+        "opentelemetry.exporter.prometheus.httplistener.nuspec"
       ]
     },
     "OpenTelemetry.Extensions.Hosting/1.16.0": {

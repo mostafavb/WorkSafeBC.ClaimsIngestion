@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U2Dp0zqFp9o=",
+  "dgSpecHash": "FGzXJ4tHaCA=",
   "success": true,
   "projectFilePath": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Worker\\WorkSafeBC.Claims.Worker.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\mvazinia\\.nuget\\packages\\opentelemetry.api\\1.16.0\\opentelemetry.api.1.16.0.nupkg.sha512",
     "C:\\Users\\mvazinia\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.16.0\\opentelemetry.api.providerbuilderextensions.1.16.0.nupkg.sha512",
     "C:\\Users\\mvazinia\\.nuget\\packages\\opentelemetry.exporter.opentelemetryprotocol\\1.16.0\\opentelemetry.exporter.opentelemetryprotocol.1.16.0.nupkg.sha512",
+    "C:\\Users\\mvazinia\\.nuget\\packages\\opentelemetry.exporter.prometheus.httplistener\\1.16.0-beta.1\\opentelemetry.exporter.prometheus.httplistener.1.16.0-beta.1.nupkg.sha512",
     "C:\\Users\\mvazinia\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.16.0\\opentelemetry.extensions.hosting.1.16.0.nupkg.sha512",
     "C:\\Users\\mvazinia\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.15.2\\opentelemetry.instrumentation.aspnetcore.1.15.2.nupkg.sha512",
     "C:\\Users\\mvazinia\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.15.1\\opentelemetry.instrumentation.http.1.15.1.nupkg.sha512",

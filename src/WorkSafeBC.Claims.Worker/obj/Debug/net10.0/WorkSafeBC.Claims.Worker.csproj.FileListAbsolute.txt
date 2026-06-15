@@ -72,3 +72,5 @@ C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Debug\net10.0\refint\Wo
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Debug\net10.0\WorkSafeBC.Claims.Worker.pdb
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Debug\net10.0\WorkSafeBC.Claims.Worker.genruntimeconfig.cache
 C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Debug\net10.0\ref\WorkSafeBC.Claims.Worker.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\bin\Debug\net10.0\OpenTelemetry.Exporter.Prometheus.HttpListener.dll
+C:\MVB\Projects\WS\prj1\src\WorkSafeBC.Claims.Worker\obj\Debug\net10.0\WorkSafeBC.Claims.Worker.sourcelink.json
