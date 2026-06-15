@@ -1,0 +1,75 @@
+name: cd
+
+on:
+  workflow_dispatch:
+    inputs:
+      resourceGroupName:
+        description: Azure resource group for the dev deployment
+        required: false
+        default: rg-wsbcclaims-dev
+      location:
+        description: Azure region for the dev deployment
+        required: false
+        default: canadacentral
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: cd-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  DOTNET_NOLOGO: true
+  RESOURCE_GROUP_NAME: ${{ inputs.resourceGroupName || 'rg-wsbcclaims-dev' }}
+  LOCATION: ${{ inputs.location || 'canadacentral' }}
+  SQL_ADMIN_LOGIN: sqladminuser
+
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+    environment: dev
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Ensure resource group exists
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az group create \
+              --name "$RESOURCE_GROUP_NAME" \
+              --location "$LOCATION" \
+              --tags environment=dev application=WorkSafeBC.ClaimsIngestion managedBy=github-actions
+
+      - name: Deploy Bicep infrastructure
+        uses: azure/arm-deploy@v2
+        with:
+          resourceGroupName: ${{ env.RESOURCE_GROUP_NAME }}
+          template: deploy/bicep/main.bicep
+          parameters: >
+            @deploy/bicep/main.dev.parameters.json
+            location=${{ env.LOCATION }}
+            sqlAdministratorLogin=${{ env.SQL_ADMIN_LOGIN }}
+            sqlAdministratorPassword=${{ secrets.SQL_ADMIN_PASSWORD }}
+
+      - name: Show deployment summary
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az deployment group list \
+              --resource-group "$RESOURCE_GROUP_NAME" \
+              --query "[0].{name:name, timestamp:properties.timestamp, state:properties.provisioningState}" \
+              --output table
