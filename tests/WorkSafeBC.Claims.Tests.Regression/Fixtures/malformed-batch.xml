@@ -1,0 +1,9 @@
+<Claims>
+  <Claim>
+    <ClaimNumber>CLM-4401</ClaimNumber>
+    <WorkerId>WRK-4401</WorkerId>
+    <InjuryDate>2026-06-12</InjuryDate>
+    <ClaimAmount>100.00</ClaimAmount>
+    <EmployerNumber>EMP-71</EmployerNumber>
+    <Currency>CAD</Currency>
+</Claims>

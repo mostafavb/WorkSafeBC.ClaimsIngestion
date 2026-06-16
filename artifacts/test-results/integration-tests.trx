@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3599fd11-a8f6-4e62-b41f-9cb4bcf66ef5" name="mvazinia@MVB-PC 2026-06-15 22:59:49" runUser="MVB-PC\mvazinia" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-15T22:59:49.7821111-07:00" queuing="2026-06-15T22:59:49.7821117-07:00" start="2026-06-15T22:58:59.8791504-07:00" finish="2026-06-15T22:59:53.1716856-07:00" />
+  <TestSettings name="default" id="afcaeca8-6178-442a-993a-1afd80c13068">
+    <Deployment runDeploymentRoot="mvazinia_MVB-PC_2026-06-15_22_59_49" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="82d0f3d0-401f-4dbd-8125-05a0770c0d2a" testId="00082bcb-7373-3b89-362b-c791fd8936d9" testName="WorkSafeBC.Claims.Tests.Integration.BlobStorageReaderIntegrationTests.GetPendingFilesAsync_Should_Read_Xml_And_Flat_Files_From_Azurite" computerName="MVB-PC" duration="00:00:01.1509548" startTime="2026-06-15T22:59:48.3180417-07:00" endTime="2026-06-15T22:59:49.2696247-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82d0f3d0-401f-4dbd-8125-05a0770c0d2a" />
+    <UnitTestResult executionId="1d992e02-cffc-494e-bcfe-53741b802a08" testId="4fb92b2b-695f-394f-34db-0766d1db48ef" testName="WorkSafeBC.Claims.Tests.Integration.ClaimIngestionPipelineIntegrationTests.Pipeline_Should_Read_From_Azurite_And_Publish_To_RabbitMq" computerName="MVB-PC" duration="00:00:01.5754880" startTime="2026-06-15T22:59:48.3084233-07:00" endTime="2026-06-15T22:59:49.6702800-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d992e02-cffc-494e-bcfe-53741b802a08" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Integration.BlobStorageReaderIntegrationTests.GetPendingFilesAsync_Should_Read_Xml_And_Flat_Files_From_Azurite" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.integration\bin\release\net10.0\worksafebc.claims.tests.integration.dll" id="00082bcb-7373-3b89-362b-c791fd8936d9">
+      <Execution id="82d0f3d0-401f-4dbd-8125-05a0770c0d2a" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Integration\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Integration.BlobStorageReaderIntegrationTests" name="GetPendingFilesAsync_Should_Read_Xml_And_Flat_Files_From_Azurite" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Integration.ClaimIngestionPipelineIntegrationTests.Pipeline_Should_Read_From_Azurite_And_Publish_To_RabbitMq" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.integration\bin\release\net10.0\worksafebc.claims.tests.integration.dll" id="4fb92b2b-695f-394f-34db-0766d1db48ef">
+      <Execution id="1d992e02-cffc-494e-bcfe-53741b802a08" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Integration\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Integration.ClaimIngestionPipelineIntegrationTests" name="Pipeline_Should_Read_From_Azurite_And_Publish_To_RabbitMq" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="00082bcb-7373-3b89-362b-c791fd8936d9" executionId="82d0f3d0-401f-4dbd-8125-05a0770c0d2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fb92b2b-695f-394f-34db-0766d1db48ef" executionId="1d992e02-cffc-494e-bcfe-53741b802a08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.8)&#xD;
+[xUnit.net 00:00:00.41]   Discovering: WorkSafeBC.Claims.Tests.Integration&#xD;
+[xUnit.net 00:00:00.51]   Discovered:  WorkSafeBC.Claims.Tests.Integration&#xD;
+[xUnit.net 00:00:00.58]   Starting:    WorkSafeBC.Claims.Tests.Integration&#xD;
+[testcontainers.org 00:00:00.61] Connected to Docker:&#xD;
+  Host: npipe://./pipe/docker_engine&#xD;
+  Server Version: 29.5.3&#xD;
+  Kernel Version: 5.15.167.4-microsoft-standard-WSL2&#xD;
+  API Version: 1.54&#xD;
+  Operating System: Docker Desktop&#xD;
+  Total Memory: 23.31 GB&#xD;
+  Labels: &#xD;
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli&#xD;
+[testcontainers.org 00:00:01.42] Docker container 05896b5187b2 created&#xD;
+[testcontainers.org 00:00:01.59] Start Docker container 05896b5187b2&#xD;
+[testcontainers.org 00:00:02.12] Wait for Docker container 05896b5187b2 to complete readiness checks&#xD;
+[testcontainers.org 00:00:03.26] Docker container 05896b5187b2 ready&#xD;
+[testcontainers.org 00:00:03.58] Docker container 15417185d73a created&#xD;
+[testcontainers.org 00:00:03.61] Docker container 7a195721ce54 created&#xD;
+[testcontainers.org 00:00:03.62] Start Docker container 15417185d73a&#xD;
+[testcontainers.org 00:00:03.64] Start Docker container 7a195721ce54&#xD;
+[testcontainers.org 00:00:04.15] Wait for Docker container 15417185d73a to complete readiness checks&#xD;
+[testcontainers.org 00:00:04.19] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 15417185d73a&#xD;
+[testcontainers.org 00:00:04.27] Wait for Docker container 7a195721ce54 to complete readiness checks&#xD;
+[testcontainers.org 00:00:04.31] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 7a195721ce54&#xD;
+[testcontainers.org 00:00:05.48] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 15417185d73a&#xD;
+[testcontainers.org 00:00:05.52] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 7a195721ce54&#xD;
+[testcontainers.org 00:00:06.70] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 15417185d73a&#xD;
+[testcontainers.org 00:00:06.74] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 7a195721ce54&#xD;
+[testcontainers.org 00:00:07.90] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 15417185d73a&#xD;
+[testcontainers.org 00:00:07.98] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*2710' /proc/net/tcp* || nc -vz -w 1 localhost 10000 || /bin/bash -c '&lt;/dev/tcp/localhost/10000')" at Docker container 7a195721ce54&#xD;
+[testcontainers.org 00:00:08.19] Docker container 15417185d73a ready&#xD;
+[testcontainers.org 00:00:08.27] Docker container 7a195721ce54 ready&#xD;
+[testcontainers.org 00:00:08.94] Docker container 073d03ea0bdd created&#xD;
+[testcontainers.org 00:00:09.05] Start Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:09.10] Docker container fd7682f6a095 created&#xD;
+[testcontainers.org 00:00:09.20] Start Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:10.06] Wait for Docker container 073d03ea0bdd to complete readiness checks&#xD;
+[testcontainers.org 00:00:10.12] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:10.17] Wait for Docker container fd7682f6a095 to complete readiness checks&#xD;
+[testcontainers.org 00:00:10.22] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:11.41] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:11.49] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:12.61] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:12.68] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:13.80] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:13.90] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:14.96] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:15.08] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:16.17] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:16.28] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:17.36] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:17.46] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:18.54] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:18.63] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:19.71] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:19.79] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:20.88] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:20.95] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:22.03] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:22.10] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:23.19] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:23.27] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:24.35] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:24.42] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:25.50] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:25.59] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:26.68] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:26.77] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:27.86] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:27.95] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:29.15] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:29.22] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:30.33] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:30.41] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:31.57] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:31.64] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:32.77] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:32.88] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:34.13] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:34.20] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:35.31] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:35.36] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:36.53] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:36.60] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:37.79] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:37.88] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:39.05] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:39.12] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:40.24] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:40.30] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:41.43] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:41.49] Execute "/bin/sh -c true &amp;&amp; (grep -i ':0*1628' /proc/net/tcp* || nc -vz -w 1 localhost 5672 || /bin/bash -c '&lt;/dev/tcp/localhost/5672')" at Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:41.56] Docker container 073d03ea0bdd ready&#xD;
+[testcontainers.org 00:00:41.61] Docker container fd7682f6a095 ready&#xD;
+     Warning:&#xD;
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and&#xD;
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for&#xD;
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.&#xD;
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.&#xD;
+     A paid commercial license supports the development and continued increasing support of&#xD;
+     Fluent Assertions users under both commercial and community licenses. Help us&#xD;
+     keep Fluent Assertions at the forefront of unit testing.&#xD;
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/&#xD;
+[testcontainers.org 00:00:42.86] Delete Docker container fd7682f6a095&#xD;
+[testcontainers.org 00:00:43.23] Delete Docker container 073d03ea0bdd&#xD;
+[testcontainers.org 00:00:43.68] Delete Docker container 7a195721ce54&#xD;
+[testcontainers.org 00:00:44.14] Delete Docker container 15417185d73a&#xD;
+[xUnit.net 00:00:46.12]   Finished:    WorkSafeBC.Claims.Tests.Integration&#xD;
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="MVB-PC" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="MVB-PC\coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>
