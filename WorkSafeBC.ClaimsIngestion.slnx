@@ -11,6 +11,7 @@
     <Project Path="tests/WorkSafeBC.Claims.Tests.Architecture/WorkSafeBC.Claims.Tests.Architecture.csproj" />
     <Project Path="tests/WorkSafeBC.Claims.Tests.Contract/WorkSafeBC.Claims.Tests.Contract.csproj" />
     <Project Path="tests/WorkSafeBC.Claims.Tests.Integration/WorkSafeBC.Claims.Tests.Integration.csproj" />
+    <Project Path="tests/WorkSafeBC.Claims.Tests.Regression/WorkSafeBC.Claims.Tests.Regression.csproj" />
     <Project Path="tests/WorkSafeBC.Claims.Tests.Unit/WorkSafeBC.Claims.Tests.Unit.csproj" />
   </Folder>
 </Solution>

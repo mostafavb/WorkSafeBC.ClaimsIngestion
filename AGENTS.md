@@ -16,7 +16,8 @@
 ## Build and Test
 - Restore/build from the solution root with `dotnet restore WorkSafeBC.ClaimsIngestion.slnx` and `dotnet build WorkSafeBC.ClaimsIngestion.slnx -c Release`.
 - Run fast feedback with `dotnet test tests\WorkSafeBC.Claims.Tests.Unit\WorkSafeBC.Claims.Tests.Unit.csproj -c Release`.
-- Run the full quality gate with the solution test projects, including architecture, contract, and integration suites.
+- Run regression coverage with `dotnet test tests\WorkSafeBC.Claims.Tests.Regression\WorkSafeBC.Claims.Tests.Regression.csproj -c Release`.
+- Run the full quality gate with the solution test projects, including architecture, contract, integration, and regression suites.
 - Integration tests require Docker because Testcontainers starts Azurite and RabbitMQ locally.
 
 ## Infrastructure and Configuration

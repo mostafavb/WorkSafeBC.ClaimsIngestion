@@ -27,6 +27,7 @@
 - [ ] Architecture tests
 - [ ] Contract tests
 - [ ] Integration tests
+- [ ] Regression tests
 - [ ] Not applicable
 
 ## Event and Data Contract Checklist
