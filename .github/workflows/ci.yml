@@ -54,6 +54,9 @@ jobs:
       - name: Run integration tests
         run: dotnet test tests/WorkSafeBC.Claims.Tests.Integration/WorkSafeBC.Claims.Tests.Integration.csproj --configuration $CONFIGURATION --no-build --logger "trx;LogFileName=integration-tests.trx" --results-directory artifacts/test-results
 
+      - name: Run regression tests
+        run: dotnet test tests/WorkSafeBC.Claims.Tests.Regression/WorkSafeBC.Claims.Tests.Regression.csproj --configuration $CONFIGURATION --no-build --logger "trx;LogFileName=regression-tests.trx" --results-directory artifacts/test-results
+
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
