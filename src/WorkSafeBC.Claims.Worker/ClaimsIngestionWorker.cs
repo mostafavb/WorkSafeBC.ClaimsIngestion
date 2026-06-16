@@ -23,6 +23,13 @@ public sealed class ClaimsIngestionWorker(
 
         while (!stoppingToken.IsCancellationRequested)
         {
+            if (!options.Value.Enabled)
+            {
+                logger.LogInformation("Claim ingestion worker is disabled for this deployment slot.");
+                await Task.Delay(pollingInterval, stoppingToken).ConfigureAwait(false);
+                continue;
+            }
+
             var files = await fileReader.GetPendingFilesAsync(stoppingToken).ConfigureAwait(false);
 
             foreach (var file in files)

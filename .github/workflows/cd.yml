@@ -11,6 +11,31 @@ on:
         description: Azure region for the dev deployment
         required: false
         default: canadacentral
+      deploymentStrategy:
+        description: Worker rollout strategy
+        required: false
+        default: rolling
+        type: choice
+        options:
+          - rolling
+          - blueGreen
+          - canary
+      activeSlot:
+        description: Active slot when using blue/green deployment
+        required: false
+        default: blue
+        type: choice
+        options:
+          - blue
+          - green
+      stableMaxReplicas:
+        description: Maximum replicas for the stable worker deployment
+        required: false
+        default: '2'
+      canaryMaxReplicas:
+        description: Maximum replicas for the canary worker deployment
+        required: false
+        default: '1'
   push:
     branches:
       - main
@@ -27,6 +52,10 @@ env:
   DOTNET_NOLOGO: true
   RESOURCE_GROUP_NAME: ${{ inputs.resourceGroupName || 'rg-wsbcclaims-dev' }}
   LOCATION: ${{ inputs.location || 'canadacentral' }}
+  DEPLOYMENT_STRATEGY: ${{ inputs.deploymentStrategy || 'rolling' }}
+  ACTIVE_SLOT: ${{ inputs.activeSlot || 'blue' }}
+  STABLE_MAX_REPLICAS: ${{ inputs.stableMaxReplicas || '2' }}
+  CANARY_MAX_REPLICAS: ${{ inputs.canaryMaxReplicas || '1' }}
   SQL_ADMIN_LOGIN: sqladminuser
 
 jobs:
@@ -62,6 +91,10 @@ jobs:
           parameters: >
             @deploy/bicep/main.dev.parameters.json
             location=${{ env.LOCATION }}
+            deploymentStrategy=${{ env.DEPLOYMENT_STRATEGY }}
+            activeSlot=${{ env.ACTIVE_SLOT }}
+            stableMaxReplicas=${{ env.STABLE_MAX_REPLICAS }}
+            canaryMaxReplicas=${{ env.CANARY_MAX_REPLICAS }}
             sqlAdministratorLogin=${{ env.SQL_ADMIN_LOGIN }}
             sqlAdministratorPassword=${{ secrets.SQL_ADMIN_PASSWORD }}
 
@@ -69,6 +102,8 @@ jobs:
         uses: azure/cli@v2
         with:
           inlineScript: |
+            echo "Deployment strategy: $DEPLOYMENT_STRATEGY"
+            echo "Active slot: $ACTIVE_SLOT"
             az deployment group list \
               --resource-group "$RESOURCE_GROUP_NAME" \
               --query "[0].{name:name, timestamp:properties.timestamp, state:properties.provisioningState}" \

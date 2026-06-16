@@ -9,6 +9,9 @@ param serviceBusNamespace string
 param serviceBusTopic string
 param keyVaultUri string
 param applicationInsightsConnectionString string
+param workerEnabled bool = true
+param minReplicas int = 1
+param maxReplicas int = 2
 param tags object = {}
 
 resource managedEnvironment 'Microsoft.App/managedEnvironments@2024-03-01' = {
@@ -53,6 +56,10 @@ resource workerApp 'Microsoft.App/containerApps@2024-03-01' = {
               value: environmentName
             }
             {
+              name: 'Worker__Enabled'
+              value: string(workerEnabled)
+            }
+            {
               name: 'ClaimsStorage__ContainerName'
               value: claimsContainerName
             }
@@ -84,8 +91,8 @@ resource workerApp 'Microsoft.App/containerApps@2024-03-01' = {
         }
       ]
       scale: {
-        minReplicas: 1
-        maxReplicas: 2
+        minReplicas: minReplicas
+        maxReplicas: maxReplicas
       }
     }
   }
