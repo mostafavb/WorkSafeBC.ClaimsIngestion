@@ -23,7 +23,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkSafeBC.Claims.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07a60aaf5a9920e899357f46f476772f585f9ca4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb9e570a3eaa177693fe5508ab5b3d252d8da253")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkSafeBC.Claims.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkSafeBC.Claims.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

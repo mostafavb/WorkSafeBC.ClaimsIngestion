@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkSafeBC.Claims.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64e5d685619502cb544b292cae6e179a6b037795")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb9e570a3eaa177693fe5508ab5b3d252d8da253")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkSafeBC.Claims.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkSafeBC.Claims.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

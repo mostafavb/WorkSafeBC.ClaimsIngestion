@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkSafeBC.Claims.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f059a0a90ae11d2490a78e6fe4d596a6f0be68d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb9e570a3eaa177693fe5508ab5b3d252d8da253")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkSafeBC.Claims.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkSafeBC.Claims.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

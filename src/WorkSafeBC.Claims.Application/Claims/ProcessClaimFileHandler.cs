@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using WorkSafeBC.Claims.Application.Abstractions;
 using WorkSafeBC.Claims.Application.Contracts;
+using WorkSafeBC.Claims.Application.Reviews;
 using WorkSafeBC.Claims.Application.Validation;
 
 namespace WorkSafeBC.Claims.Application.Claims;
@@ -10,6 +11,7 @@ public sealed class ProcessClaimFileHandler(
     IClaimBusinessValidator validator,
     IClaimMessagePublisher publisher,
     IClaimProcessingLedger ledger,
+    IClaimReviewInbox reviewInbox,
     TimeProvider timeProvider,
     ILogger<ProcessClaimFileHandler> logger)
     : ICommandHandler<ProcessClaimFileCommand, ProcessClaimFileResult>
@@ -22,9 +24,13 @@ public sealed class ProcessClaimFileHandler(
             return new ProcessClaimFileResult(command.File.FileName, 0, 0, true);
         }
 
+        var parsedClaims = 0;
+        var publishedEvents = 0;
+
         try
         {
             var claims = parser.Parse(command.File);
+            parsedClaims = claims.Count;
 
             foreach (var claim in claims)
             {
@@ -42,16 +48,42 @@ public sealed class ProcessClaimFileHandler(
                     IngestedAtUtc: timeProvider.GetUtcNow());
 
                 await publisher.PublishAsync(integrationEvent, cancellationToken).ConfigureAwait(false);
+                publishedEvents++;
             }
 
             await ledger.MarkProcessedAsync(command.File.FileName, claims.Count, cancellationToken).ConfigureAwait(false);
 
-            return new ProcessClaimFileResult(command.File.FileName, claims.Count, claims.Count, false);
+            return new ProcessClaimFileResult(command.File.FileName, parsedClaims, publishedEvents, false);
         }
         catch (Exception exception)
         {
             await ledger.MarkFailedAsync(command.File.FileName, exception.Message, cancellationToken).ConfigureAwait(false);
-            throw;
+
+            var reviewItem = new ClaimReviewItem(
+                ReviewId: Guid.NewGuid().ToString("N"),
+                FileName: command.File.FileName,
+                FileKind: command.File.Kind,
+                FailureReason: exception.Message,
+                OriginalContent: command.File.Content,
+                CreatedAtUtc: timeProvider.GetUtcNow());
+
+            await reviewInbox.QueueAsync(reviewItem, cancellationToken).ConfigureAwait(false);
+            await ledger.MarkReviewRequiredAsync(command.File.FileName, exception.Message, reviewItem.ReviewId, cancellationToken).ConfigureAwait(false);
+
+            logger.LogWarning(
+                exception,
+                "Queued file {FileName} for manual review as review item {ReviewId}.",
+                command.File.FileName,
+                reviewItem.ReviewId);
+
+            return new ProcessClaimFileResult(
+                command.File.FileName,
+                parsedClaims,
+                publishedEvents,
+                false,
+                WasQueuedForReview: true,
+                FailureReason: exception.Message,
+                ReviewItemId: reviewItem.ReviewId);
         }
     }
 }

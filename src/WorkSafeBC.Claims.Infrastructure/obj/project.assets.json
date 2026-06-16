@@ -1280,14 +1280,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\WorkSafeBC.Claims.Infrastructure.csproj",
+      "projectUniqueName": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\WorkSafeBC.Claims.Infrastructure.csproj",
       "projectName": "WorkSafeBC.Claims.Infrastructure",
-      "projectPath": "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\WorkSafeBC.Claims.Infrastructure.csproj",
+      "projectPath": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\WorkSafeBC.Claims.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\mvazinia\\.nuget\\packages\\",
-      "outputPath": "c:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\obj\\",
+      "outputPath": "C:\\MVB\\Projects\\WS\\prj1\\src\\WorkSafeBC.Claims.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "c:\\MVB\\Projects\\WS\\prj1\\src\\NuGet.Config",
+        "C:\\MVB\\Projects\\WS\\prj1\\src\\NuGet.Config",
         "C:\\Users\\mvazinia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [

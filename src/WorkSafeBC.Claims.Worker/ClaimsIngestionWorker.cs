@@ -42,12 +42,33 @@ public sealed class ClaimsIngestionWorker(
                 try
                 {
                     var result = await handler.HandleAsync(new ProcessClaimFileCommand(file), stoppingToken).ConfigureAwait(false);
-                    _successCounter.Add(1);
-                    activity?.SetTag("claims.file.claims", result.ParsedClaims);
-                    logger.LogInformation(
-                        "Processed file {FileName} with {PublishedEvents} published events.",
-                        result.FileName,
-                        result.PublishedEvents);
+
+                    if (result.WasSkipped)
+                    {
+                        activity?.SetTag("claims.file.skipped", true);
+                        logger.LogInformation("Skipped file {FileName} because it was already completed.", result.FileName);
+                    }
+                    else if (result.WasQueuedForReview)
+                    {
+                        _failureCounter.Add(1);
+                        activity?.SetStatus(ActivityStatusCode.Error, result.FailureReason);
+                        activity?.SetTag("claims.file.review_required", true);
+                        activity?.SetTag("claims.review.id", result.ReviewItemId);
+                        logger.LogWarning(
+                            "Queued file {FileName} for manual review as review item {ReviewItemId}. Reason: {FailureReason}",
+                            result.FileName,
+                            result.ReviewItemId,
+                            result.FailureReason);
+                    }
+                    else
+                    {
+                        _successCounter.Add(1);
+                        activity?.SetTag("claims.file.claims", result.ParsedClaims);
+                        logger.LogInformation(
+                            "Processed file {FileName} with {PublishedEvents} published events.",
+                            result.FileName,
+                            result.PublishedEvents);
+                    }
                 }
                 catch (Exception exception)
                 {
