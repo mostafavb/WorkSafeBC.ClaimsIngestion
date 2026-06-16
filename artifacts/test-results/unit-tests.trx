@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="732bfc4f-44b2-4fb5-ac0d-424b844e93af" name="mvazinia@MVB-PC 2026-06-15 22:58:41" runUser="MVB-PC\mvazinia" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-15T22:58:41.0977854-07:00" queuing="2026-06-15T22:58:41.0977865-07:00" start="2026-06-15T22:58:35.3528563-07:00" finish="2026-06-15T22:58:41.9230175-07:00" />
+  <TestSettings name="default" id="7383f4a5-2818-4bb4-9413-6c133369b42d">
+    <Deployment runDeploymentRoot="mvazinia_MVB-PC_2026-06-15_22_58_41" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a3ffc395-04a5-44d7-aa46-53a7ecc5fd9d" testId="fc3eb3bf-5ac5-689f-dd5d-171d2ca3295b" testName="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests.HandleAsync_ShouldPublishOneEventPerParsedClaim" computerName="MVB-PC" duration="00:00:00.2846090" startTime="2026-06-15T22:58:40.6218424-07:00" endTime="2026-06-15T22:58:40.8756996-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3ffc395-04a5-44d7-aa46-53a7ecc5fd9d" />
+    <UnitTestResult executionId="dbd0f7c9-92fa-4c05-ba21-7689f91daab9" testId="6f889cc8-4b2a-4f8b-5ad5-71df830c8c3a" testName="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldThrow_WhenClaimAmountIsNotPositive" computerName="MVB-PC" duration="00:00:00.0010789" startTime="2026-06-15T22:58:40.7339972-07:00" endTime="2026-06-15T22:58:40.7341396-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbd0f7c9-92fa-4c05-ba21-7689f91daab9" />
+    <UnitTestResult executionId="4510726c-c14e-45b9-b7d0-5e701464c275" testId="3af85111-f8d9-1fa3-e1dd-97799e43b370" testName="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldThrow_WhenEmployerNumberIsMissing" computerName="MVB-PC" duration="00:00:00.0024429" startTime="2026-06-15T22:58:40.7241335-07:00" endTime="2026-06-15T22:58:40.7242641-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4510726c-c14e-45b9-b7d0-5e701464c275" />
+    <UnitTestResult executionId="547d9fd4-2097-478f-8f7b-1dee9b9f0985" testId="02e07c76-0b3c-d8f5-1663-73d77190c825" testName="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldNormalize_TrimmedValues_AndDefaultCurrency" computerName="MVB-PC" duration="00:00:00.0065480" startTime="2026-06-15T22:58:40.7154854-07:00" endTime="2026-06-15T22:58:40.7156398-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="547d9fd4-2097-478f-8f7b-1dee9b9f0985" />
+    <UnitTestResult executionId="6b0245c9-e027-432c-a9ae-bdfc5a8f6a38" testId="ccda7759-787f-7839-8683-a2cf4d57efb3" testName="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldUppercaseCurrency_WhenProvided" computerName="MVB-PC" duration="00:00:00.0003494" startTime="2026-06-15T22:58:40.7184598-07:00" endTime="2026-06-15T22:58:40.7185798-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b0245c9-e027-432c-a9ae-bdfc5a8f6a38" />
+    <UnitTestResult executionId="8a233b90-de42-4142-8367-5f123261474a" testId="4a9bcd11-96c6-3d35-c952-7af0db7206f3" testName="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldThrow_WhenWorkerIdIsMissing" computerName="MVB-PC" duration="00:00:00.0764434" startTime="2026-06-15T22:58:40.6219166-07:00" endTime="2026-06-15T22:58:40.6804154-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a233b90-de42-4142-8367-5f123261474a" />
+    <UnitTestResult executionId="a481be21-88b6-4496-a36a-d7e4bfa279f9" testId="c8420ad7-b79e-9b23-638e-d0caf7c4be87" testName="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldPass_WhenClaimIsEligibleForPublishing" computerName="MVB-PC" duration="00:00:00.0724448" startTime="2026-06-15T22:58:40.6191678-07:00" endTime="2026-06-15T22:58:40.6693616-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a481be21-88b6-4496-a36a-d7e4bfa279f9" />
+    <UnitTestResult executionId="70b8b63f-a8d3-4c47-bc1b-4c1251eeb425" testId="144e7909-1bd0-1aca-b1ff-af2a2c9373d1" testName="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldThrow_WhenClaimNumberIsMissing" computerName="MVB-PC" duration="00:00:00.0011652" startTime="2026-06-15T22:58:40.7170347-07:00" endTime="2026-06-15T22:58:40.7171632-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70b8b63f-a8d3-4c47-bc1b-4c1251eeb425" />
+    <UnitTestResult executionId="537758ad-6cba-4cf3-862b-a2ad59a46bcb" testId="3202eb06-0979-f21d-cc2c-f978a252bc66" testName="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests.HandleAsync_ShouldQueueReview_WhenPublishingFails" computerName="MVB-PC" duration="00:00:00.0401133" startTime="2026-06-15T22:58:40.9307807-07:00" endTime="2026-06-15T22:58:40.9308769-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="537758ad-6cba-4cf3-862b-a2ad59a46bcb" />
+    <UnitTestResult executionId="cd0e054f-94a0-4594-9383-77a3ab6c6069" testId="a13b4102-8d37-46cf-6453-66e031e491c1" testName="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldThrow_WhenInjuryDateIsInTheFuture" computerName="MVB-PC" duration="00:00:00.0243615" startTime="2026-06-15T22:58:40.7153616-07:00" endTime="2026-06-15T22:58:40.7224904-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd0e054f-94a0-4594-9383-77a3ab6c6069" />
+    <UnitTestResult executionId="f6001db2-5bb7-4982-a4e2-c3022578a28d" testId="59358543-20cc-595d-eb07-eaaa70fb9761" testName="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests.HandleAsync_ShouldSkip_WhenFileWasAlreadyProcessed" computerName="MVB-PC" duration="00:00:00.0076320" startTime="2026-06-15T22:58:40.9318882-07:00" endTime="2026-06-15T22:58:40.9320434-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6001db2-5bb7-4982-a4e2-c3022578a28d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldUppercaseCurrency_WhenProvided" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="ccda7759-787f-7839-8683-a2cf4d57efb3">
+      <Execution id="6b0245c9-e027-432c-a9ae-bdfc5a8f6a38" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests" name="Constructor_ShouldUppercaseCurrency_WhenProvided" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldThrow_WhenEmployerNumberIsMissing" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="3af85111-f8d9-1fa3-e1dd-97799e43b370">
+      <Execution id="4510726c-c14e-45b9-b7d0-5e701464c275" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests" name="Validate_ShouldThrow_WhenEmployerNumberIsMissing" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests.HandleAsync_ShouldSkip_WhenFileWasAlreadyProcessed" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="59358543-20cc-595d-eb07-eaaa70fb9761">
+      <Execution id="f6001db2-5bb7-4982-a4e2-c3022578a28d" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests" name="HandleAsync_ShouldSkip_WhenFileWasAlreadyProcessed" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests.HandleAsync_ShouldPublishOneEventPerParsedClaim" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="fc3eb3bf-5ac5-689f-dd5d-171d2ca3295b">
+      <Execution id="a3ffc395-04a5-44d7-aa46-53a7ecc5fd9d" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests" name="HandleAsync_ShouldPublishOneEventPerParsedClaim" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldThrow_WhenClaimNumberIsMissing" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="144e7909-1bd0-1aca-b1ff-af2a2c9373d1">
+      <Execution id="70b8b63f-a8d3-4c47-bc1b-4c1251eeb425" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests" name="Constructor_ShouldThrow_WhenClaimNumberIsMissing" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldThrow_WhenClaimAmountIsNotPositive" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="6f889cc8-4b2a-4f8b-5ad5-71df830c8c3a">
+      <Execution id="dbd0f7c9-92fa-4c05-ba21-7689f91daab9" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests" name="Validate_ShouldThrow_WhenClaimAmountIsNotPositive" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldNormalize_TrimmedValues_AndDefaultCurrency" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="02e07c76-0b3c-d8f5-1663-73d77190c825">
+      <Execution id="547d9fd4-2097-478f-8f7b-1dee9b9f0985" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests" name="Constructor_ShouldNormalize_TrimmedValues_AndDefaultCurrency" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests.HandleAsync_ShouldQueueReview_WhenPublishingFails" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="3202eb06-0979-f21d-cc2c-f978a252bc66">
+      <Execution id="537758ad-6cba-4cf3-862b-a2ad59a46bcb" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.ProcessClaimFileHandlerTests" name="HandleAsync_ShouldQueueReview_WhenPublishingFails" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldPass_WhenClaimIsEligibleForPublishing" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="c8420ad7-b79e-9b23-638e-d0caf7c4be87">
+      <Execution id="a481be21-88b6-4496-a36a-d7e4bfa279f9" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests" name="Validate_ShouldPass_WhenClaimIsEligibleForPublishing" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests.Constructor_ShouldThrow_WhenWorkerIdIsMissing" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="4a9bcd11-96c6-3d35-c952-7af0db7206f3">
+      <Execution id="8a233b90-de42-4142-8367-5f123261474a" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.InjuryClaimTests" name="Constructor_ShouldThrow_WhenWorkerIdIsMissing" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests.Validate_ShouldThrow_WhenInjuryDateIsInTheFuture" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.unit\bin\release\net10.0\worksafebc.claims.tests.unit.dll" id="a13b4102-8d37-46cf-6453-66e031e491c1">
+      <Execution id="cd0e054f-94a0-4594-9383-77a3ab6c6069" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Unit\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Unit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Unit.ClaimBusinessValidatorTests" name="Validate_ShouldThrow_WhenInjuryDateIsInTheFuture" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="fc3eb3bf-5ac5-689f-dd5d-171d2ca3295b" executionId="a3ffc395-04a5-44d7-aa46-53a7ecc5fd9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f889cc8-4b2a-4f8b-5ad5-71df830c8c3a" executionId="dbd0f7c9-92fa-4c05-ba21-7689f91daab9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3af85111-f8d9-1fa3-e1dd-97799e43b370" executionId="4510726c-c14e-45b9-b7d0-5e701464c275" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="02e07c76-0b3c-d8f5-1663-73d77190c825" executionId="547d9fd4-2097-478f-8f7b-1dee9b9f0985" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ccda7759-787f-7839-8683-a2cf4d57efb3" executionId="6b0245c9-e027-432c-a9ae-bdfc5a8f6a38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a9bcd11-96c6-3d35-c952-7af0db7206f3" executionId="8a233b90-de42-4142-8367-5f123261474a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8420ad7-b79e-9b23-638e-d0caf7c4be87" executionId="a481be21-88b6-4496-a36a-d7e4bfa279f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="144e7909-1bd0-1aca-b1ff-af2a2c9373d1" executionId="70b8b63f-a8d3-4c47-bc1b-4c1251eeb425" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3202eb06-0979-f21d-cc2c-f978a252bc66" executionId="537758ad-6cba-4cf3-862b-a2ad59a46bcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a13b4102-8d37-46cf-6453-66e031e491c1" executionId="cd0e054f-94a0-4594-9383-77a3ab6c6069" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59358543-20cc-595d-eb07-eaaa70fb9761" executionId="f6001db2-5bb7-4982-a4e2-c3022578a28d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="11" executed="11" passed="11" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.8)&#xD;
+[xUnit.net 00:00:00.22]   Discovering: WorkSafeBC.Claims.Tests.Unit&#xD;
+[xUnit.net 00:00:00.31]   Discovered:  WorkSafeBC.Claims.Tests.Unit&#xD;
+[xUnit.net 00:00:00.36]   Starting:    WorkSafeBC.Claims.Tests.Unit&#xD;
+     Warning:&#xD;
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and&#xD;
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for&#xD;
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.&#xD;
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.&#xD;
+     A paid commercial license supports the development and continued increasing support of&#xD;
+     Fluent Assertions users under both commercial and community licenses. Help us&#xD;
+     keep Fluent Assertions at the forefront of unit testing.&#xD;
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/&#xD;
+[xUnit.net 00:00:00.77]   Finished:    WorkSafeBC.Claims.Tests.Unit&#xD;
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="MVB-PC" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="MVB-PC\coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="99adf112-c487-49ef-aa78-d742451dfa5f" name="mvazinia@MVB-PC 2026-06-15 23:00:01" runUser="MVB-PC\mvazinia" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-15T23:00:01.8040688-07:00" queuing="2026-06-15T23:00:01.8040700-07:00" start="2026-06-15T22:59:56.5735364-07:00" finish="2026-06-15T23:00:01.8236458-07:00" />
+  <TestSettings name="default" id="8c012c16-37bb-4c13-b436-e621e30c0b71">
+    <Deployment runDeploymentRoot="mvazinia_MVB-PC_2026-06-15_23_00_01" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="c445934b-5dcd-4929-9e14-5f59a953a9f8" testId="8ccf3599-b395-d14d-5259-c134178c3e1b" testName="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldPublishOneEventPerParsedClaim" computerName="MVB-PC" duration="00:00:00.0314183" startTime="2026-06-15T23:00:00.5136131-07:00" endTime="2026-06-15T23:00:00.5435832-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c445934b-5dcd-4929-9e14-5f59a953a9f8" />
+    <UnitTestResult executionId="872fa3e3-0041-4ca8-95fc-2110085d90ef" testId="90f55b42-d206-0e86-be2f-36f50de3ed5c" testName="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldSkip_WhenFileWasAlreadyProcessed" computerName="MVB-PC" duration="00:00:00.2845117" startTime="2026-06-15T23:00:00.1920018-07:00" endTime="2026-06-15T23:00:00.4472123-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="872fa3e3-0041-4ca8-95fc-2110085d90ef" />
+    <UnitTestResult executionId="54989d2a-e834-4b9c-8fc6-df91a706004d" testId="3ff1295a-360f-3124-1942-486034d12a2b" testName="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldQueueReview_WhenValidationThrows" computerName="MVB-PC" duration="00:00:00.0191735" startTime="2026-06-15T23:00:00.4951456-07:00" endTime="2026-06-15T23:00:00.5120720-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54989d2a-e834-4b9c-8fc6-df91a706004d" />
+    <UnitTestResult executionId="6bbb895a-4c29-4ede-8848-39c285237d36" testId="9af3f2c3-12c7-f10a-6f08-5f2af3459f5f" testName="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldQueueReview_WhenPublisherThrows" computerName="MVB-PC" duration="00:00:00.0442165" startTime="2026-06-15T23:00:00.4877403-07:00" endTime="2026-06-15T23:00:00.4927420-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bbb895a-4c29-4ede-8848-39c285237d36" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldQueueReview_WhenValidationThrows" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.regression\bin\release\net10.0\worksafebc.claims.tests.regression.dll" id="3ff1295a-360f-3124-1942-486034d12a2b">
+      <Execution id="54989d2a-e834-4b9c-8fc6-df91a706004d" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Regression\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Regression.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests" name="HandleAsync_ShouldQueueReview_WhenValidationThrows" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldQueueReview_WhenPublisherThrows" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.regression\bin\release\net10.0\worksafebc.claims.tests.regression.dll" id="9af3f2c3-12c7-f10a-6f08-5f2af3459f5f">
+      <Execution id="6bbb895a-4c29-4ede-8848-39c285237d36" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Regression\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Regression.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests" name="HandleAsync_ShouldQueueReview_WhenPublisherThrows" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldPublishOneEventPerParsedClaim" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.regression\bin\release\net10.0\worksafebc.claims.tests.regression.dll" id="8ccf3599-b395-d14d-5259-c134178c3e1b">
+      <Execution id="c445934b-5dcd-4929-9e14-5f59a953a9f8" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Regression\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Regression.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests" name="HandleAsync_ShouldPublishOneEventPerParsedClaim" />
+    </UnitTest>
+    <UnitTest name="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests.HandleAsync_ShouldSkip_WhenFileWasAlreadyProcessed" storage="c:\mvb\projects\ws\prj1\tests\worksafebc.claims.tests.regression\bin\release\net10.0\worksafebc.claims.tests.regression.dll" id="90f55b42-d206-0e86-be2f-36f50de3ed5c">
+      <Execution id="872fa3e3-0041-4ca8-95fc-2110085d90ef" />
+      <TestMethod codeBase="C:\MVB\Projects\WS\prj1\tests\WorkSafeBC.Claims.Tests.Regression\bin\Release\net10.0\WorkSafeBC.Claims.Tests.Regression.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="WorkSafeBC.Claims.Tests.Regression.ProcessClaimFileHandlerRegressionTests" name="HandleAsync_ShouldSkip_WhenFileWasAlreadyProcessed" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8ccf3599-b395-d14d-5259-c134178c3e1b" executionId="c445934b-5dcd-4929-9e14-5f59a953a9f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90f55b42-d206-0e86-be2f-36f50de3ed5c" executionId="872fa3e3-0041-4ca8-95fc-2110085d90ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ff1295a-360f-3124-1942-486034d12a2b" executionId="54989d2a-e834-4b9c-8fc6-df91a706004d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9af3f2c3-12c7-f10a-6f08-5f2af3459f5f" executionId="6bbb895a-4c29-4ede-8848-39c285237d36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.8)&#xD;
+[xUnit.net 00:00:00.21]   Discovering: WorkSafeBC.Claims.Tests.Regression&#xD;
+[xUnit.net 00:00:00.30]   Discovered:  WorkSafeBC.Claims.Tests.Regression&#xD;
+[xUnit.net 00:00:00.36]   Starting:    WorkSafeBC.Claims.Tests.Regression&#xD;
+     Warning:&#xD;
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and&#xD;
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for&#xD;
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.&#xD;
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.&#xD;
+     A paid commercial license supports the development and continued increasing support of&#xD;
+     Fluent Assertions users under both commercial and community licenses. Help us&#xD;
+     keep Fluent Assertions at the forefront of unit testing.&#xD;
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/&#xD;
+[xUnit.net 00:00:00.83]   Finished:    WorkSafeBC.Claims.Tests.Regression&#xD;
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="MVB-PC" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="MVB-PC\coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

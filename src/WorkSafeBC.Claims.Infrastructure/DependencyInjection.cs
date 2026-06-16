@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using WorkSafeBC.Claims.Application.Abstractions;
 using WorkSafeBC.Claims.Infrastructure.Messaging;
 using WorkSafeBC.Claims.Infrastructure.Processing;
+using WorkSafeBC.Claims.Infrastructure.Reviews;
 using WorkSafeBC.Claims.Infrastructure.Secrets;
 using WorkSafeBC.Claims.Infrastructure.Storage;
 
@@ -24,6 +25,7 @@ public static class DependencyInjection
         services.AddSingleton<IClaimFileParser, ClaimFileParser>();
         services.AddSingleton<IClaimMessagePublisher, RabbitMqClaimMessagePublisher>();
         services.AddSingleton<IClaimProcessingLedger, InMemoryClaimProcessingLedger>();
+        services.AddSingleton<IClaimReviewInbox, InMemoryClaimReviewInbox>();
         services.AddSingleton<ISecretProvider, KeyVaultSecretProvider>();
 
         services.AddSingleton(static serviceProvider =>

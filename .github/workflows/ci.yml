@@ -18,6 +18,7 @@ env:
   DOTNET_NOLOGO: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   CONFIGURATION: Release
+  REGRESSION_LINE_COVERAGE_THRESHOLD: 73
 
 jobs:
   build-test:
@@ -43,7 +44,7 @@ jobs:
         run: dotnet build WorkSafeBC.ClaimsIngestion.slnx --configuration $CONFIGURATION --no-restore
 
       - name: Run unit tests
-        run: dotnet test tests/WorkSafeBC.Claims.Tests.Unit/WorkSafeBC.Claims.Tests.Unit.csproj --configuration $CONFIGURATION --no-build --logger "trx;LogFileName=unit-tests.trx" --results-directory artifacts/test-results
+        run: dotnet test tests/WorkSafeBC.Claims.Tests.Unit/WorkSafeBC.Claims.Tests.Unit.csproj --configuration $CONFIGURATION --no-build --collect:"XPlat Code Coverage" --logger "trx;LogFileName=unit-tests.trx" --results-directory artifacts/test-results
 
       - name: Run architecture tests
         run: dotnet test tests/WorkSafeBC.Claims.Tests.Architecture/WorkSafeBC.Claims.Tests.Architecture.csproj --configuration $CONFIGURATION --no-build --logger "trx;LogFileName=architecture-tests.trx" --results-directory artifacts/test-results
@@ -52,10 +53,38 @@ jobs:
         run: dotnet test tests/WorkSafeBC.Claims.Tests.Contract/WorkSafeBC.Claims.Tests.Contract.csproj --configuration $CONFIGURATION --no-build --logger "trx;LogFileName=contract-tests.trx" --results-directory artifacts/test-results
 
       - name: Run integration tests
-        run: dotnet test tests/WorkSafeBC.Claims.Tests.Integration/WorkSafeBC.Claims.Tests.Integration.csproj --configuration $CONFIGURATION --no-build --logger "trx;LogFileName=integration-tests.trx" --results-directory artifacts/test-results
+        run: dotnet test tests/WorkSafeBC.Claims.Tests.Integration/WorkSafeBC.Claims.Tests.Integration.csproj --configuration $CONFIGURATION --no-build --collect:"XPlat Code Coverage" --logger "trx;LogFileName=integration-tests.trx" --results-directory artifacts/test-results
 
       - name: Run regression tests
-        run: dotnet test tests/WorkSafeBC.Claims.Tests.Regression/WorkSafeBC.Claims.Tests.Regression.csproj --configuration $CONFIGURATION --no-build --logger "trx;LogFileName=regression-tests.trx" --results-directory artifacts/test-results
+        run: dotnet test tests/WorkSafeBC.Claims.Tests.Regression/WorkSafeBC.Claims.Tests.Regression.csproj --configuration $CONFIGURATION --no-build --collect:"XPlat Code Coverage" --logger "trx;LogFileName=regression-tests.trx" --results-directory artifacts/test-results
+
+      - name: Enforce regression coverage gate
+        shell: pwsh
+        run: |
+          $coverageFiles = Get-ChildItem -Path artifacts/test-results -Recurse -Filter coverage.cobertura.xml
+          if (-not $coverageFiles) {
+            throw "No coverage reports were produced."
+          }
+
+          [double]$coveredLines = 0
+          [double]$validLines = 0
+
+          foreach ($coverageFile in $coverageFiles) {
+            [xml]$coverage = Get-Content -Path $coverageFile.FullName
+            $coveredLines += [double]$coverage.coverage.'lines-covered'
+            $validLines += [double]$coverage.coverage.'lines-valid'
+          }
+
+          if ($validLines -le 0) {
+            throw "Coverage reports did not contain any instrumented production lines."
+          }
+
+          $coveragePercent = [math]::Round(($coveredLines / $validLines) * 100, 2)
+          "Aggregated line coverage: $coveragePercent%"
+
+          if ($coveragePercent -lt [double]$env:REGRESSION_LINE_COVERAGE_THRESHOLD) {
+            throw "Regression coverage gate failed. Required line coverage is $($env:REGRESSION_LINE_COVERAGE_THRESHOLD)% but actual coverage was $coveragePercent%."
+          }
 
       - name: Upload test results
         if: always()

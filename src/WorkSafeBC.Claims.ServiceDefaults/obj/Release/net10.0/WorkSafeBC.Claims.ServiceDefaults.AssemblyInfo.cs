@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkSafeBC.Claims.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07a60aaf5a9920e899357f46f476772f585f9ca4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3a7491defd5664a2f1ce595e1521239d6a3831e")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkSafeBC.Claims.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkSafeBC.Claims.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

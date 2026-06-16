@@ -26,4 +26,11 @@ public sealed class InMemoryClaimProcessingLedger : IClaimProcessingLedger
         _processedFiles.TryRemove(fileName, out _);
         return Task.CompletedTask;
     }
+
+    public Task MarkReviewRequiredAsync(string fileName, string reason, string reviewItemId, CancellationToken cancellationToken)
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+        _processedFiles[fileName] = $"review:{reviewItemId}";
+        return Task.CompletedTask;
+    }
 }

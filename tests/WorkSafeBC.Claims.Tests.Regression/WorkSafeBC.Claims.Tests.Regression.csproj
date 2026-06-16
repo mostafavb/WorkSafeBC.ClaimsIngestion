@@ -24,6 +24,13 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\WorkSafeBC.Claims.Application\WorkSafeBC.Claims.Application.csproj" />
     <ProjectReference Include="..\..\src\WorkSafeBC.Claims.Domain\WorkSafeBC.Claims.Domain.csproj" />
+    <ProjectReference Include="..\..\src\WorkSafeBC.Claims.Infrastructure\WorkSafeBC.Claims.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Fixtures\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
